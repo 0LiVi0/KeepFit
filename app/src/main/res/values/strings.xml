@@ -10,4 +10,5 @@
     <string name="go">GO!</string>
     <string name="createAccount"><u>create account</u></string>
     <string name="button_back">Back</string>
+    <string name="access_token">pk.eyJ1IjoibXVydml0YWxpayIsImEiOiJjbDNmd3lsZ3owd212M2pwOGg5bnh1dmkxIn0.47O5o1Q0E51MnwfWsoL8aA</string>
 </resources>
