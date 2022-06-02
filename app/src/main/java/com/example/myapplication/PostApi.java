@@ -16,7 +16,7 @@ import retrofit2.http.Path;
 public interface PostApi {
 
 
-    String root = "http://192.168.133.2:8000/";
+    String root = "http://52.158.46.50:8000/";
 //    String root = "http://127.0.0.1:8000/";
 
 
