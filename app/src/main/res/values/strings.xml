@@ -11,4 +11,30 @@
     <string name="createAccount"><u>create account</u></string>
     <string name="button_back">Back</string>
     <string name="access_token">pk.eyJ1IjoibXVydml0YWxpayIsImEiOiJjbDNmd3lsZ3owd212M2pwOGg5bnh1dmkxIn0.47O5o1Q0E51MnwfWsoL8aA</string>
+
+    <!--RecyclerView-->
+    <string-array name="route_names">
+        <item>Name 1</item>
+        <item>Name 2</item>
+        <item>Name 3</item>
+        <item>Name 4</item>
+        <item>Name 5</item>
+    </string-array>
+
+    <string-array name="route_distance">
+        <item>Distance</item>
+        <item>Distance</item>
+        <item>Distance</item>
+        <item>Distance</item>
+        <item>Distance</item>
+    </string-array>
+
+    <string-array name="route_time">
+        <item>Time</item>
+        <item>Time</item>
+        <item>Time</item>
+        <item>Time</item>
+        <item>Time</item>
+    </string-array>
+
 </resources>

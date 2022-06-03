@@ -5,7 +5,9 @@
       <map>
         <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/main_menu.xml" value="0.16666666666666666" />
-        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/profile_login.xml" value="0.10461956521739131" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/profile_login.xml" value="0.22" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/recycler_view_row.xml" value="0.22" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/route_list.xml" value="0.1796875" />
         <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/test_map.xml" value="0.1796875" />
         <entry key="..\:/Projects/Android/KeepFit/app/src/main/res/drawable/button.xml" value="0.1115" />
         <entry key="..\:/Projects/Android/KeepFit/app/src/main/res/layout/main_menu.xml" value="0.1796875" />
