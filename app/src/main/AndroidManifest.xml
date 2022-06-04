@@ -15,10 +15,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".RouteList"
-            android:exported="false" />
-        <!--TODO: роут ліст - це актівіті, переробити на class-->
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -4,13 +4,16 @@ import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.SurfaceControl;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.mapbox.android.core.location.LocationEngine;
@@ -60,11 +63,23 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
     private NavigationMapRoute navigationMapRoute;
     private static final String TAG = "MainMenu";
 
+
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.main_menu, container, false);
         Mapbox.getInstance(getContext().getApplicationContext(), "pk.eyJ1IjoibXVydml0YWxpayIsImEiOiJjbDN0OHludmUxNXFkM2psdGNyNjcwN21xIn0._yHfnXYvptI7oAemYvQg3g");
         mapView = rootView.findViewById(R.id.mapView);
+
         startButton = rootView.findViewById(R.id.startNavigationButton);
+        FloatingActionButton go_to_route_list = rootView.findViewById(R.id.go_to_route_list);
+        go_to_route_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new RouteList();
+                replaceFragment(fragment);
+            }
+        });
+
+
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
 
@@ -83,6 +98,15 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
 
         return rootView;
     }
+
+    private void replaceFragment(Fragment someFragment) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, someFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
+
 
     @Override
     public void onMapReady(MapboxMap mapboxMap) {

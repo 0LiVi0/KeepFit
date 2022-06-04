@@ -165,8 +165,7 @@ public class ProfileRegister extends Fragment  implements View.OnClickListener {
 
     private Boolean IsEmptyEditTextLogin(){
 
-        // TODO: тут замінити Edreg_username на email, мейбі поможе пофіксити 
-        if(Edreg_password.getText().toString().isEmpty() || Edreg_username.getText().toString().isEmpty()|| Edreg_email.getText().toString().isEmpty()){
+        if(Edreg_password.getText().toString().isEmpty() || Edreg_email.getText().toString().isEmpty()|| Edreg_username.getText().toString().isEmpty()){
 
             Toast toast = Toast.makeText(getActivity(),"Empty EditText", Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER, 0, 0);
