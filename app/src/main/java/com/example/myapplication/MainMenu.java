@@ -42,6 +42,7 @@ import com.mapbox.services.android.navigation.ui.v5.route.NavigationMapRoute;
 import com.mapbox.services.android.navigation.v5.navigation.NavigationRoute;
 
 import java.util.List;
+import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -83,18 +84,18 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
 
-        startButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavigationLauncherOptions options = NavigationLauncherOptions.builder()
-                        .origin(originPosition)
-                        .destination(destinationPosition)
-                        // TODO симулює навігацію, потрібно прибрати, якщо додаток піде у відкритий доступ
-                        .shouldSimulateRoute(true)
-                        .build();
-                NavigationLauncher.startNavigation(getActivity(), options);
-            }
-        });
+//        startButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                NavigationLauncherOptions options = NavigationLauncherOptions.builder()
+//                        .origin(originPosition)
+//                        .destination(destinationPosition)
+//                        // TODO симулює навігацію, потрібно прибрати, якщо додаток піде у відкритий доступ
+//                        .shouldSimulateRoute(true)
+//                        .build();
+//                NavigationLauncher.startNavigation(getActivity(), options);
+//            }
+//        });
 
         return rootView;
     }
@@ -105,7 +106,6 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
         transaction.addToBackStack(null);
         transaction.commit();
     }
-
 
 
     @Override
@@ -233,6 +233,7 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         permissionsManager.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
+
 
     @Override
     public void onStart() {
