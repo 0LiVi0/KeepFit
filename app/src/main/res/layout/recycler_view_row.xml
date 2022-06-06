@@ -23,13 +23,13 @@
                 android:id="@+id/route_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="140dp"
+                android:layout_marginStart="135dp"
                 android:layout_marginTop="41dp"
                 android:text="Time"
+                android:textColor="@color/green_for_buttonGO"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/route_distance"
-                app:layout_constraintTop_toTopOf="parent"
-                android:textColor="@color/green_textColor"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/route_distance"
@@ -40,20 +40,20 @@
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/route_name"
                 app:layout_constraintTop_toBottomOf="@+id/route_name"
-                android:textColor="@color/green_textColor"/>
+                android:textColor="@color/green_for_buttonGO"/>
 
             <TextView
                 android:id="@+id/route_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:text="Name"
-                android:textSize="24sp"
+                android:textColor="@color/green_for_buttonGO"
+                android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/route_icon"
-                app:layout_constraintTop_toTopOf="parent"
-                android:textColor="@color/green_textColor"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/route_icon"

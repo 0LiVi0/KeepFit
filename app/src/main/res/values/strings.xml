@@ -14,27 +14,27 @@
 
     <!--RecyclerView-->
     <string-array name="route_names">
-        <item>Name 1</item>
-        <item>Name 2</item>
-        <item>Name 3</item>
-        <item>Name 4</item>
-        <item>Name 5</item>
+        <item>Оперний театр - Стрийський парк</item>
+        <item>Стрийський парк</item>
+        <item>Ратуша - Високий Замок</item>
+        <item>Парк Франка - парк Прогулянка</item>
+        <item>Палац Потоцьких - Лебедине озеро</item>
     </string-array>
 
     <string-array name="route_distance">
-        <item>Distance</item>
-        <item>Distance</item>
-        <item>Distance</item>
-        <item>Distance</item>
-        <item>Distance</item>
+        <item>2.6 км</item>
+        <item>2.3 км</item>
+        <item>3.5 км</item>
+        <item>4.8 км</item>
+        <item>5 км</item>
     </string-array>
 
     <string-array name="route_time">
-        <item>Time</item>
-        <item>Time</item>
-        <item>Time</item>
-        <item>Time</item>
-        <item>Time</item>
+        <item>35 хв</item>
+        <item>30 хв</item>
+        <item>50 хв</item>
+        <item>63 хв</item>
+        <item>65 хв</item>
     </string-array>
 
 </resources>

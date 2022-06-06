@@ -104,11 +104,7 @@ public class ProfileLogin extends Fragment  implements View.OnClickListener {
             if ( InternetUtil.isInternetOnline(getActivity()) ){
                 login();
             }
-
         }
-
-
-
     }
 
 
@@ -151,7 +147,6 @@ public class ProfileLogin extends Fragment  implements View.OnClickListener {
 
 
 
-                        Toast.makeText(getContext(), token, Toast.LENGTH_SHORT).show();
 
                         Fragment fragment = null;
                         fragment = new MainMenu();

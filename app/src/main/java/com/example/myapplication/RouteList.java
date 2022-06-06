@@ -19,8 +19,8 @@ public class RouteList extends Fragment {
     RecyclerView recyclerView;
 
     String[] route_name, route_distance, route_time;
-    int[] image = {R.drawable.running_icon_routes, R.drawable.running_icon_routes, R.drawable.walking_icon_routes,
-            R.drawable.running_icon_routes, R.drawable.walking_icon_routes};
+    int[] image = {R.drawable.theatre, R.drawable.park, R.drawable.tv_tower,
+            R.drawable.park, R.drawable.swan};
 
     @Nullable
     @Override
