@@ -81,21 +81,22 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
         });
 
 
+
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
 
-//        startButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                NavigationLauncherOptions options = NavigationLauncherOptions.builder()
-//                        .origin(originPosition)
-//                        .destination(destinationPosition)
-//                        // TODO симулює навігацію, потрібно прибрати, якщо додаток піде у відкритий доступ
-//                        .shouldSimulateRoute(true)
-//                        .build();
-//                NavigationLauncher.startNavigation(getActivity(), options);
-//            }
-//        });
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavigationLauncherOptions options = NavigationLauncherOptions.builder()
+                        .origin(originPosition)
+                        .destination(destinationPosition)
+                        // TODO симулює навігацію, потрібно прибрати, якщо додаток піде у відкритий доступ
+                        .shouldSimulateRoute(false)
+                        .build();
+                NavigationLauncher.startNavigation(getActivity(), options);
+            }
+        });
 
         return rootView;
     }

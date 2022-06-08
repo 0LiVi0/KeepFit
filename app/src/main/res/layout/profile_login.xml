@@ -9,7 +9,7 @@
 
     <View
         android:id="@+id/underText"
-        android:layout_width="match_parent"
+        android:layout_width="500sp"
         android:layout_height="270sp"
         android:layout_below="@id/logoImage"
         android:layout_marginHorizontal="20sp"
@@ -27,11 +27,11 @@
         android:backgroundTint="@color/green_textColor"
         android:ems="10"
         android:fontFamily="@font/roboto_regular"
-        android:hint="@string/email"
+        android:hint="@string/nickname"
         android:inputType="textEmailAddress"
         android:textColor="@color/green_textColor"
-        android:textColorHint="@color/green_textColor"
-        android:textSize="26sp" />
+        android:textColorHint="#F8494A37"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/password"
@@ -45,8 +45,8 @@
         android:fontFamily="@font/roboto_regular"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:textColorHint="@color/green_textColor"
-        android:textSize="26sp" />
+        android:textColorHint="#F8494A37"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/forgotPassword"
@@ -73,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
-        android:layout_marginHorizontal="160sp"
+        android:layout_marginHorizontal="140sp"
         android:layout_marginTop="44dp"
         android:background="@drawable/button"
         android:backgroundTint="@color/green_for_buttonGO"
@@ -85,11 +85,11 @@
     <Button
         android:id="@+id/createAccount"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
+        android:layout_width="208dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/go"
-        android:layout_marginHorizontal="117sp"
-        android:layout_marginTop="-5dp"
+        android:layout_marginHorizontal="100sp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="@color/green_underText"
         android:fontFamily="@font/roboto_regular"
         android:stateListAnimator="@null"

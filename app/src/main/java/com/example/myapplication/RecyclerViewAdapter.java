@@ -58,5 +58,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             route_time = itemView.findViewById(R.id.route_time);
             route_icon = itemView.findViewById(R.id.route_icon);
         }
+
     }
 }

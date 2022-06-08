@@ -3,12 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/drawable/button.xml" value="0.121" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/drawable/menu.xml" value="0.121" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/drawable/view_element.xml" value="0.121" />
         <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
-        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/main_menu.xml" value="0.16666666666666666" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/header_menu.xml" value="0.1671195652173913" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/main_menu.xml" value="0.25" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/menu.xml" value="0.1671195652173913" />
         <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/profile_login.xml" value="0.22" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/profile_register.xml" value="0.1671195652173913" />
         <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/recycler_view_row.xml" value="0.22" />
         <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/route_list.xml" value="0.1796875" />
         <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/layout/test_map.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/menu/burger_menu.xml" value="0.1796875" />
+        <entry key="..\:/Projects/Android/KeepFit-NEW/app/src/main/res/menu/main_drawer_menu.xml" value="0.1796875" />
         <entry key="..\:/Projects/Android/KeepFit/app/src/main/res/drawable/button.xml" value="0.1115" />
         <entry key="..\:/Projects/Android/KeepFit/app/src/main/res/layout/main_menu.xml" value="0.1796875" />
         <entry key="..\:/Projects/Android/KeepFit/app/src/main/res/layout/profile_login.xml" value="0.1796875" />

@@ -1,16 +1,17 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="createAccountMenu">Create Account</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="nickname">Nickname</string>
-    <string name="confirmPassword">Confirm password</string>
-    <string name="create">Create</string>
-    <string name="forgot_password">Forgot Password</string>
-    <string name="go">GO!</string>
-    <string name="createAccount"><u>create account</u></string>
-    <string name="button_back">Back</string>
+    <string name="email">Електронна скринька</string>
+    <string name="password">Пароль</string>
+    <string name="nickname">Псевдонім</string>
+    <string name="confirmPassword">Підтвердіть пароль</string>
+    <string name="create">Створити</string>
+    <string name="forgot_password">Забули пароль ?</string>
+    <string name="go">ПОЇХАЛИ!</string>
+    <string name="createAccount"><u>створити аккаунт</u></string>
+    <string name="button_back">Назад</string>
     <string name="access_token">pk.eyJ1IjoibXVydml0YWxpayIsImEiOiJjbDNmd3lsZ3owd212M2pwOGg5bnh1dmkxIn0.47O5o1Q0E51MnwfWsoL8aA</string>
+    <string name="category_1">Category 1</string>
 
     <!--RecyclerView-->
     <string-array name="route_names">

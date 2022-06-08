@@ -10,6 +10,9 @@
     <color name="green_background">#D9E082</color>
     <color name="shadow">#666B24</color>
     <color name="green_textColor">#262806</color>
+    <color name="text_color_hint">#F8494A37</color>
     <color name="green_underText">#E1E895</color>
     <color name="green_for_buttonGO">#666B24</color>
+    <color name="menu_color">#B2C248</color>
+    <color name="under_menu_item">#FFFFC7</color>
 </resources>
