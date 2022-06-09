@@ -4,6 +4,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.SurfaceControl;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +13,13 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
 import com.mapbox.android.core.location.LocationEngine;
 import com.mapbox.android.core.location.LocationEngineListener;
 import com.mapbox.android.core.location.LocationEnginePriority;
@@ -49,7 +53,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEngineListener,
-        PermissionsListener, MapboxMap.OnMapClickListener {
+        PermissionsListener, MapboxMap.OnMapClickListener, NavigationView.OnNavigationItemSelectedListener {
 
     private MapView mapView;
     private MapboxMap map;
@@ -63,6 +67,8 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
     private Marker destinationMarker;
     private NavigationMapRoute navigationMapRoute;
     private static final String TAG = "MainMenu";
+    private NavigationView navigationView;
+    private DrawerLayout drawerLayout;
 
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -80,7 +86,10 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
             }
         });
 
+        navigationView = rootView.findViewById(R.id.navigationView);
+        drawerLayout = rootView.findViewById(R.id.drawerMenu);
 
+        navigationView.setNavigationItemSelectedListener(this);
 
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
@@ -108,6 +117,26 @@ public class MainMenu extends Fragment implements OnMapReadyCallback, LocationEn
         transaction.commit();
     }
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.routes:
+                Fragment fragment = new RouteList();
+                replaceFragment(fragment);
+                break;
+            case R.id.famous_places:
+
+                break;
+            case R.id.progress:
+
+                break;
+            case R.id.settings:
+
+                break;
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
 
     @Override
     public void onMapReady(MapboxMap mapboxMap) {

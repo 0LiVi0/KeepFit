@@ -23,8 +23,8 @@
                 android:id="@+id/route_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="135dp"
-                android:layout_marginTop="41dp"
+                android:layout_marginStart="132dp"
+                android:layout_marginTop="32dp"
                 android:text="Time"
                 android:textColor="@color/green_for_buttonGO"
                 android:textSize="16sp"
@@ -59,11 +59,13 @@
                 android:id="@+id/route_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerInside"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@mipmap/ic_launcher" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
